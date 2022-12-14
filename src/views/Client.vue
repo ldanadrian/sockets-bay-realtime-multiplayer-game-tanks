@@ -46,7 +46,6 @@
             
             this.socket.onmessage = ( message ) => {
                 var _data = JSON.parse(message.data);
-                console.log("am primit", _data);  
                 if( _data.cmd == "list_tanks" ){
                     this.tanks = _data.tanks.filter( x=> x.tank_id != this.my_id );
                 }

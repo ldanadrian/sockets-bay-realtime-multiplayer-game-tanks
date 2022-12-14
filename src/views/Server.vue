@@ -37,7 +37,7 @@
             
             this.socket.onmessage = ( message ) => {
                 var _data = JSON.parse(message.data);
-                console.log("am primit", _data);  
+                
                 
                 if( _data.cmd == "new_tank" ) {
                     this.tanks.push( new Tank( _data.tank_id) );
