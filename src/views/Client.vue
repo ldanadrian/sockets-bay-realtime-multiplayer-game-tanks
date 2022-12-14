@@ -27,7 +27,7 @@
             my_tank: {},
             connected: false,
             my_id: "",
-            url: 'wss://socketsbay.com/wss/v2/1/demo/',
+            url: 'wss://socketsbay.com/wss/v2/1/demo/', //instead of the "Demo" api key, you should create your own on https://socketsbay.com/
             socket: {},
             
         }
